@@ -1,89 +1,88 @@
+/* COMENTÁRIO */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+*  {
+    margin:0;
+    padding:0;
     font-family: 'Noto Sans JP', sans-serif;
 }
-
 body{
-    background-image:url("../img/01.png");
-    background-size:100%;
-	background-attachment:fixed;
+    background: url(../img/background-normal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+body header#cabecalho{
+    display: block;
+    background-color: rgb(39, 39, 39);
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
 
-.cabecalho{
-    font-size:50px;
-    font-weight: bolder;
-    font-style: italic;
-	text-align: center;
-	padding:50px; 
-	
-}   
-
-
-.conteudo{
-    float: left;
-    font-size: 30px;
-    color: white;
+body header#cabecalho h1{
     text-align: center;
-    padding:50px; 
-    	
+    color: rgb(163, 13, 13);
 }
 
-.menu{
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.397);  
-}
-
-.menu ul li{
-    list-style: none;
-    justify-content: space-around;
-}
-
-.menu ul li a{
-    
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 30px;
-    display: inline-block;
-    transition: background .4s;  
-}
-
-.menu ul li a:hover{
-    background-color: rgba(161, 0, 236, 0.342);
-}
-
-
-.conteudo{
-    display: inline-block;
-    margin: 50px;
-    background-color: rgba(0, 0, 0, 0.397);
-}
-.conteudo h1{
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.315); 
-    color: black;
-    padding-bottom: 30px; 
-}
-
-
-.conteudo p{
-    color: white;
-    margin: 25px;
-}
-
-.conteudo a{
-    color: white;
-    text-decoration: none;
-}
-
-
-.rodape{    
-    padding: 20px;
-    font-size: 20px;
+body section div{
     text-align: center;
-    font-weight: bolder;
-    
+}
+
+body section div#texto{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+body section div#texto h2{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+body section div#texto h3{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+}
+
+body section div#texto h3 span{
+    color: rgb(173, 2, 2);
+}
+
+body section div#img img{
+    text-align: center;
+    width: 35%;
+    border-radius: 1rem;
+    border: .2rem solid rgba(0, 0, 0, 0.404);
+}
+
+body section div#botao button{
+    border: 1px solid rgb(168, 21, 21);
+    background-color: rgb(168, 21, 21);
+    color: #ffffff;
+    padding: 1rem;
+    font-size: .8vw;
+    font-weight: 600;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .4s ease-out;
+}
+ 
+body section div#botao button:hover{
+    background-color: rgb(168, 21, 21);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+footer{
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, 0.300);
+    color: #ffffff;
+    padding: .5rem;
+    position:absolute;
+    bottom:0;
+    width: 99.16%;
 }
